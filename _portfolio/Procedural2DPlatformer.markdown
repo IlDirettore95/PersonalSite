@@ -1,11 +1,9 @@
 ---
-layout: splash
 title: Procedural2DPlatformer
 permalink: /projects/procedural-2d-platformer/
-date: 2016-03-23T11:48:41-04:00
 header:
-  image: /assets/img/Trauma.png
-  teaser: /assets/img/Trauma.png
+  image: /assets/img/Procedural2DPlatformerGeneration.gif
+  teaser: /assets/img/Procedural2DPlatformerGeneration.gif
 intro: 
   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
 feature_row:

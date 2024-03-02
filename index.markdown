@@ -5,26 +5,22 @@
 layout: archive
 author_profile: true
 
-gallery1:
+Trauma:
   - url: /projects/trauma/
     image_path: /assets/img/TraumaAppeared.gif
-    alt: "placeholder image 1"
-    title: "Image 1 title caption"
-gallery2:
+    alt: "Trauma"
+Procedural2DPlatformer:
   - url: /projects/procedural-2d-platformer/
     image_path: /assets/img/Procedural2DPlatformerGeneration.gif
-    alt: "placeholder image 2"
-    title: "Image 2 title caption"
-gallery3:
+    alt: "Procedural2DPlatformer"
+Stray:
   - url: /projects/stray/
     image_path: /assets/img/StrayOverview.gif
-    alt: "placeholder image 2"
-    title: "Image 2 title caption"
-gallery4:
-  - url: /weekend_stories_pics/2021/2102_Corona_Fruehling/2102 Corona Fruehling 8164-1v (21. Feb. 2021).jpg
-    image_path: /assets/img/Trauma.png
-    alt: "placeholder image 2"
-    title: "Image 2 title caption"
+    alt: "Stray"
+AStar:
+  - url: /projects/astar/
+    image_path: /assets/img/AStar.gif
+    alt: "AStar"
 ---
 
 Hi, I am Giorgio Michele De Giorgio and these are my highlighted projects. 
@@ -34,33 +30,42 @@ You can click on them to have more info about the projects themself and the proc
 
 # Trauma 
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
-{% include gallery id="gallery1"%}
+{% include gallery id="Trauma"%}
 - **Role**: AI Programmer, Gameplay Programmer, Audio Programmer, Music Producer and Light Artist
 - **Genre**: Survival Horror
 - **Style**: 3D - First person
 - **Engine**: Unreal Engine 5
-- **Tech**: Blueprints, Behaviour Trees, State Trees, AIPerception, Environment Query System (EQS) and Metasound
+- **Tech**: Blueprints, Behaviour Trees, State Trees, AIPerception, Environment Query System (EQS) and MetaSound
 - **Team**: 8 people
 - **Total time**: 3 months
 {: style="text-align: left; font-size: 0.7em;"}
-# Procedural 2D Platformer
-{: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
-{% include gallery id="gallery2"%}
-- **Role**: Gameplay Programmer and Tool Programmer
-- **Genre**: Platformer
-- **Style**: 2D
-- **Engine**: Unity
-- **Tech**: C#, PCG, State machines
-- **Team**: solo project
-- **Total time**: 1 month
-{: style="text-align: left; font-size: 0.7em;"}
 # Stray
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
-{% include gallery id="gallery3" %}
+{% include gallery id="Stray" %}
 - **Role**: Gameplay Programmer, Level Designer and Music Producer
 - **Genre**: Adventure Platformer
 - **Engine**: Unity
 - **Tech**: C#
 - **Team**: 3 people
 - **Total time**: 5 months
+{: style="text-align: left; font-size: 0.7em;"}
+# Procedural 2D Platformer
+{: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
+{% include gallery id="Procedural2DPlatformer"%}
+- **Role**: Gameplay Programmer and Tool Programmer
+- **Genre**: Platformer
+- **Style**: 2D
+- **Engine**: Unity
+- **Tech**: C#, PCG and State machines
+- **Team**: solo project
+- **Total time**: 1 month
+{: style="text-align: left; font-size: 0.7em;"}
+# A* implementation and profiling
+{: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
+{% include gallery id="AStar"%}
+- **Role**: C++ Programmer
+- **Engine**: No engine, C++ STL library
+- **Tech**: C++
+- **Team**: 2 people
+- **Total time**: 1 week
 {: style="text-align: left; font-size: 0.7em;"}
