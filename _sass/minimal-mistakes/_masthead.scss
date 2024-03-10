@@ -15,7 +15,7 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    padding: 1em; //1em
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -44,13 +44,14 @@
 }
 
 .site-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-weight: bold;
-  // z-index: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-weight: bold;
+    font-size: $type-size-4;
+    // z-index: 20;
 }
 
 .site-subtitle {

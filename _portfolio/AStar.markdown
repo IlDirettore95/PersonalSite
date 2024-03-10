@@ -1,7 +1,7 @@
 ---
 title: A* and Profiling
 permalink: /projects/astar/
-excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+excerpt: ""
 header:
   teaser: /assets/img/AStar.gif
 ---
@@ -22,8 +22,10 @@ The techniques used are described in the book "AI for Games" written by *Ian Mil
 
 ## Base implementation
 L'algoritmo usa un grafo non diretto, il quale stato definito con una struttura dati persoanlizzata.
+
 ## Node Array A*
 The author proposes an implementation which ereases the need of a closed list.
+
 ## Heap Node Array A*
 L'algoritmo usa un grafo non diretto, il quale stato definito con una struttura dati persoanlizzata.
 

@@ -25,7 +25,7 @@ AStar:
 
 Hi, I am Giorgio Michele De Giorgio and these are my highlighted projects. 
 {: style="text-align: justify;"}
-You can click on them to have more info about the projects themself and the process I used to work on them.
+You can click on the images to have more info about the projects.
 {: style="text-align: justify;"}
 
 # Trauma 
@@ -42,8 +42,9 @@ You can click on them to have more info about the projects themself and the proc
 # Stray
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 {% include gallery id="Stray" %}
-- **Role**: Gameplay Programmer, Level Designer and Music Producer
+- **Role**: Gameplay Programmer, UI Programmer, Level Designer, Music Producer and Light Artist
 - **Genre**: Adventure Platformer
+- **Style**: 3D - First person
 - **Engine**: Unity
 - **Tech**: C#
 - **Team**: 3 people
