@@ -130,7 +130,7 @@ Several techiques, for example, low pass filters and adjustments on volume or pi
 This was my team's first Unreal project and the biggest one we worked on during the DBGA Game programming course. 
 Hence, we decided to only use Blueprints to make our life easier while exploring the Unreal toolset.
 
-I worked side by side with a disgner on the iterations on the Trauma AI.
+I worked side by side with a designer on the iterations on the Trauma AI.
 We started using Behaviour Trees, but it was quickly clear that our ideas were very "state driven" and hierarchical.
 Hence, we switched to Unreal's new State Tree.
 
