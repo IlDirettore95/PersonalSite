@@ -144,6 +144,3 @@ In summary, I used several tools provided by Unreal Eninge 5:
 - AI Perception
 - EQS (Environment Query System)
 - MetaSound
-
-### Next projects
-For the next project, I want to explore programming in C++ with Unreal and how combining it with Blueprints.
