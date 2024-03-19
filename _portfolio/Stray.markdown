@@ -1,9 +1,12 @@
 ---
 title: Stray
 permalink: /projects/stray/
-excerpt: "3D Adventure platformer"
+excerpt: "3D Adventure Platformer"
 header:
   teaser: /assets/img/StrayOverview.gif
+Stray:
+  - image_path: /assets/img/StrayOverview.gif
+    alt: "Stray"
 sidebar:
   - title: "Role"
     text: " <ul>
@@ -38,7 +41,7 @@ sidebar:
                 <li>5 months</li>
             </ul>"
 ---
-
+{% include gallery id="Stray"%}
 ## Introduction to Stray
 
 Stray was a group project I did during a Game Programming course at the University of Calabria and also my first Unity project.
@@ -74,6 +77,8 @@ I also explored many Unity's features:
     - PostProcessing
 - Particle System
 
+Finally, I also worked to the level design and music production for the game.
+
 ### Character Controller
 
 The main character movement is based on Unity's CharacterControllerComponent. It checks for the users' input and act accordingly to the current "state".
@@ -86,3 +91,9 @@ Forces are used to implement the main character's powers. These powers let the p
 This can be used to reach high places or throw object to enemies (or enemies to walls).
 
 ## What I learned
+
+This was a deep dive into Unity and Game Programming. I made use of 3D math to control the player and to manipulate objects. 
+Even collisions were handled by hand using various type of casts.
+
+For the next project I thought that would have been essential starting to structure the software better using Design Patterns.
+Also an event driven approeach could save me a lot of headache.

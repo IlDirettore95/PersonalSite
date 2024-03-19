@@ -7,7 +7,7 @@ author_profile: true
 
 Trauma:
   - url: /projects/trauma/
-    image_path: /assets/img/TraumaAppeared.gif
+    image_path: /assets/img/Trauma/TraumaAppeared.gif
     alt: "Trauma"
 Procedural2DPlatformer:
   - url: /projects/procedural-2d-platformer/
@@ -24,8 +24,6 @@ AStar:
 ---
 
 Hi, I am Giorgio Michele De Giorgio and these are my highlighted projects. 
-{: style="text-align: justify;"}
-You can click on the images to have more info about the projects.
 {: style="text-align: justify;"}
 
 # Trauma 
@@ -56,17 +54,17 @@ You can click on the images to have more info about the projects.
 - **Role**: Gameplay Programmer and Tool Programmer
 - **Genre**: Platformer
 - **Style**: 2D
-- **Engine**: Unity
-- **Tech**: C#, PCG and State machines
-- **Team**: solo project
+- **Engine**: Unity3D
+- **Tech**: C#, PCG, State machines and Unity custom window
+- **Team**: Solo project
 - **Total time**: 1 month
 {: style="text-align: left; font-size: 0.7em;"}
-# A* implementation and profiling
+# A* Implementation and Profiling
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 {% include gallery id="AStar"%}
 - **Role**: C++ Programmer
-- **Engine**: No engine, C++ STL library
-- **Tech**: C++
+- **Engine**: No engine
+- **Tech**: C++, STL library
 - **Team**: 2 people
 - **Total time**: 1 week
 {: style="text-align: left; font-size: 0.7em;"}

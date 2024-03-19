@@ -165,17 +165,18 @@ a > code,
 li > code,
 figcaption > code,
 td > code {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  font-size: 0.8em;
-  background: $code-background-color;
-  border-radius: $border-radius;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.8em;
 
-  &:before,
-  &:after {
-    letter-spacing: -0.2em;
-    content: "\00a0"; /* non-breaking space*/
-  }
+    background: $code-background-color;
+    border-radius: $border-radius;
+
+    &:before,
+    &:after {
+        letter-spacing: -0.2em;
+        content: "\00a0"; /* non-breaking space*/
+    }
 }
 
 /* horizontal rule */
@@ -213,7 +214,7 @@ figure {
   -webkit-box-align: start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0 0 0;
+  margin: 2em 0 2em 0;
 
   img,
   iframe,
@@ -262,19 +263,20 @@ figure {
 /* Figure captions */
 
 figcaption {
-  margin-bottom: 0.5em;
-  color: $muted-text-color;
-  font-family: $caption-font-family;
-  font-size: $type-size-6;
+    margin-bottom: 0.5em;
+    color: $muted-text-color;
+    font-family: $caption-font-family;
+    font-size: $type-size-6;
+    text-align: center;
 
-  a {
-    -webkit-transition: $global-transition;
-    transition: $global-transition;
+    a {
+        -webkit-transition: $global-transition;
+        transition: $global-transition;
 
-    &:hover {
-      color: $link-color-hover;
+        &:hover {
+            color: $link-color-hover;
+        }
     }
-  }
 }
 
 /* Fix IE9 SVG bug */

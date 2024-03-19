@@ -3,10 +3,24 @@ title: Trauma
 permalink: /projects/trauma/
 excerpt: "3D Survival Horror"
 header:
-  teaser: /assets/img/TraumaAppeared.gif
+  teaser: /assets/img/Trauma/TraumaAppeared.gif
 Trauma:
-  - image_path: /assets/img/Trauma.png
-    alt: "Trauma"
+  - image_path: /assets/img/Trauma/Trauma.png
+TraumaStateMachine:
+  - url: /assets/img/Trauma/TraumaStateMachineDiagram.png
+    image_path: /assets/img/Trauma/TraumaStateMachineDiagram.png
+  - url: /assets/img/Trauma/TraumaStateTree.jpg
+    image_path: /assets/img/Trauma/TraumaStateTree.jpg
+TraumaMetaSoundData:
+  - url: /assets/img/Trauma/TraumaMetaSoundInput.png
+    image_path: /assets/img/Trauma/TraumaMetaSoundInput.png
+  - url: /assets/img/Trauma/TraumaMetaSoundDataPassing.png
+    image_path: /assets/img/Trauma/TraumaMetaSoundDataPassing.png
+TraumaMetaSoundExamples:
+  - url: /assets/img/Trauma/TraumaMetaSoundStatsFeedback.png
+    image_path: /assets/img/Trauma/TraumaMetaSoundStatsFeedback.png
+  - url: /assets/img/Trauma/TraumaMetaSoundInvestigationBrutalizer.png
+    image_path: /assets/img/Trauma/TraumaMetaSoundInvestigationBrutalizer.png
 sidebar:
   - title: "Role"
     text: " <ul>
@@ -19,7 +33,7 @@ sidebar:
   - title: "Responsibilities"
     text: " <ul>
                 <li>Monster AI</li>
-                <li>AI world interfacing</li>
+                <li>AI-world interfacing</li>
                 <li>Interaction between gameplay and audio</li>
             </ul>"
   - title: "Engine"
@@ -45,23 +59,105 @@ sidebar:
             </ul>"
 ---
 {% include gallery id="Trauma"%}
+
+[//]: # "DI CHE PROGETTO SI TRATTA"
 ## Introduction to Trauma
+Trauma is a **3D First Person Survival Horror** project I have worked on during the DBGA Game Programming course.
+The game is about proceeding through a story, solving puzzles and being hunted by a monster called Trauma.
 
-Trauma is a 3D First Person Survival Horror project I have worked on during the DBGA Game Programming course.
- 
-In this game the players must solve puzzles and proceed through the story while hunted by a monster called Trauma.
+Some of the important mechanics are the following:
+- Two main stats: *mental health* and *fear* 
+    - Mental health is the same as "health"
+    - Fear increases if the players stay in the dark or are chased by the Trauma
+- **Interaction** with some objects:
+    - Using **matches** to light **candles**   
+    - **Pickup** objects
+    - Open/close closets to hide from the monster
+- Using the **torch**:
+    - Explore dark areas
+    - Slay/stun enemies
+- Rest in a **safe room**
+    - Save the game
 
-The main mechanics of this game are:
-- Staying in the dark build up your **fear**
-- Using a **torch** to see better and slay/stun enemies
-- Using **matches** to light **candles**
-- **Interact** with objects
-- **Pickup** objects
-
-
+[//]: # "DI COSA MI SONO OCCUPATO"
 ## What I have done
+I worked on:
+- Monster AI
+- Various interaction between the AI and environment
+- Audio programming of loops and audio effects to give feedbacks to the players
 
-I worked on the monster AI, the interaction between AI and environment, and the audio programming of various effects and loops that give feedbacks to the players.
+### AI Programming
+My role was primarly architecting and implementing the main AI. 
+I started investigating Unreal tools for AI and researching for ways to model such an agent.
+
+{% include gallery id="TraumaStateMachine" caption="Trauma AI State Machine diagram vs StateTree implementation."%}
+
+The Trauma has two "modes":
+- *Back mode*
+- *Front mode*
+
+While in the back mode, it is invisible and teleports in random places searching for the players. 
+It reactes to high fear or noises and, if it does, it will switch to fron mode.
+The players can detect it by hearing its noises.
+
+In front mode, the monster patrols between random rooms searching for the player. 
+If it hears or sees something it will start investigating that location. 
+Then, if the players are detected, a chase will start.
+
+### AI-world interfacing
+The AI needs information about the world. This is done mainly using Unreal **AIPerception** system, but there is more to it.
+When the player enters the safe room, the Trauma must disappear switching to the "None" state. 
+
+If the player can't be found during a chase, the monster will go searching around for *hiding spots*.
+
+The players have a *light score* that is used to determine how well the monster can see them.
+When the players is in Trauma's sight cone they are not detected instantly. 
+If the monster's sight is stimulated enough, it will try to investigate towards that location and, eventually, will detect the players.
+
+### Audio Programming
+Gameplay interfacing with SFX and Music has been made using Unreal Engine 5 MetaSound. 
+
+Gameplay variables and events are sent to a Master MetaSound which then propagates information to specialized ones.
+This approach let me test the audio of (almost) the entire main game loop directly on the Master MetaSound asset.
+
+{% include gallery id="TraumaMetaSoundData" caption="Gameplay events and data sent to MetaSound and then propagated to other ones."%}
+
+Several techiques, for example, low pass filters and adjustments on volume or pitch, were used to emphasize game loop situations. 
+
+{% include gallery id="TraumaMetaSoundExamples" caption="MetaSound examples to shape audio according to gameplay data."%}
+
+## What I have learned
+This was my team's first Unreal project and the biggest one we worked on during the DBGA Game programming course. 
+Hence, we decided to only use Blueprints to make our life easier while exploring the Unreal toolset.
+
+I worked side by side with a disgner on the iterations on the Trauma AI.
+We started using Behaviour Trees, but it was quickly clear that our ideas were very "state driven" and hierarchical.
+Hence, we switched to Unreal's new State Tree.
+
+I worked following the agent architecture presented in *Artificial Intelligence: A Modern Approach* by Russel and Norvig, trying to adapt to the Unreal framework.
+Moreover, I researched various techniques presented in *AI for Games* by Ian Millington.
+
+In summary, I used several tools provided by Unreal Eninge 5:
+- Blueprints
+- Behaviour Trees
+- State Trees
+- AI Perception
+- EQS (Environment Query System)
+- MetaSound
+
+This project was helpful to start using Unreal toolset. My takaway from the AI programming on this demo is that AI is a design problem first of all. 
+We did a lot of things that sounded great on paper but were unoticeble while playing.
+Regarding the implementation, I worked following the agent architecture presented by "Artificial Intelligence: A Modern Approach" by Russel and Norvig, trying to adapt to the Unreal framework.
+I learned how to use gameplay events and variables to drive audio feedbacks using MetaSound and to test them easily.
+
+For the next Unreal projects I will use C++ combined with Blueprints and dive in more complex AI reasoning. I am still reaserching about AI modeling, expecially making it clean and flexible.
+
+It has been clear from the start that my ideas and the designer's ones were very "state driven" and hierarchical. 
+This, after several research on the book "AI for Games" by Ian Millington and on GDC talks, drove me away from the idea of using Behaviour Trees for the decision making phase. 
+So I decided to give Unreal State Trees a shot and they paid off.
+
+I worked also on some interaction the monster has with the players and the environment, such as interacting with closets where the players can hide and a score to estimate the main character's visibility.
+
 
 I used various technologies provided by Unreal Engine 5:
 - Behaviour Trees
@@ -72,36 +168,5 @@ I used various technologies provided by Unreal Engine 5:
 
 This was our first project with Unreal and the one with the biggest scope we ever worked on, so we decided to do it entirely in Blueprints.
 
-### AI and Gameplay Programming
 
-My role has been primarly to architect and implement the main AI of the game.
-
-I started investigating Unreal tools for AI and researching for ways to model such an agent.
-
-The monster has two modes: the Front mode and the Back mode. 
-In the Front mode it patrols and reacts to the sight of the players and to noises. 
-During the Back mode it teleports in different locations on the map, trying to hear noises or to feel players' fear.
-Moreover, during the Front mode, the AI can be in one of the three states: Patrolling, Investigation and Chasing.
-
-It has been clear from the start that my ideas and the designer's ones were very "state driven" and hierarchical. 
-This, after several research on the book "AI for Games" by Ian Millington and on GDC talks, drove me away from the idea of using Behaviour Trees for the decision making phase. 
-So I decided to give Unreal State Trees a shot and they paid off.
-
-I worked also on some interaction the monster has with the players and the environment, such as interacting with closets where the players can hide and a score to estimate the main character's visibility.
-
-### Audio Programming
-
-Gameplay interfacing with SFX and Music has been made using Unreal Engine 5 MetaSound. 
-
-Gameplay variables and events are sent to a Master MetaSound which then propagates information to specialized ones.
-This approach let me test the audio of (almost) the entire main game loop directly on the Master MetaSound asset.
-
-## What I have learned
-
-This project was helpful to start using Unreal toolset. My takaway from the AI programming on this demo is that AI is a design problem first of all. 
-We did a lot of things that sounded great on paper but were unoticeble while playing.
-Regarding the implementation, I worked following the agent architecture presented by "Artificial Intelligence: A Modern Approach" by Russel and Norvig, trying to adapt to the Unreal framework.
-I learned how to use gameplay events and variables to drive audio feedbacks using MetaSound and to test them easely.
-
-For the next Unreal projects I will use C++ combined with Blueprints and dive in more complex AI reasoning. I am still reaserching about AI modeling, expecially making it clean and flexible.
-
+[//]: # "COSA HO IMPARATO"
