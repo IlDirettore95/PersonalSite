@@ -145,28 +145,5 @@ In summary, I used several tools provided by Unreal Eninge 5:
 - EQS (Environment Query System)
 - MetaSound
 
-This project was helpful to start using Unreal toolset. My takaway from the AI programming on this demo is that AI is a design problem first of all. 
-We did a lot of things that sounded great on paper but were unoticeble while playing.
-Regarding the implementation, I worked following the agent architecture presented by "Artificial Intelligence: A Modern Approach" by Russel and Norvig, trying to adapt to the Unreal framework.
-I learned how to use gameplay events and variables to drive audio feedbacks using MetaSound and to test them easily.
-
-For the next Unreal projects I will use C++ combined with Blueprints and dive in more complex AI reasoning. I am still reaserching about AI modeling, expecially making it clean and flexible.
-
-It has been clear from the start that my ideas and the designer's ones were very "state driven" and hierarchical. 
-This, after several research on the book "AI for Games" by Ian Millington and on GDC talks, drove me away from the idea of using Behaviour Trees for the decision making phase. 
-So I decided to give Unreal State Trees a shot and they paid off.
-
-I worked also on some interaction the monster has with the players and the environment, such as interacting with closets where the players can hide and a score to estimate the main character's visibility.
-
-
-I used various technologies provided by Unreal Engine 5:
-- Behaviour Trees
-- State Trees
-- AI Perception
-- EQS (Environment Query System)
-- MetaSound
-
-This was our first project with Unreal and the one with the biggest scope we ever worked on, so we decided to do it entirely in Blueprints.
-
-
-[//]: # "COSA HO IMPARATO"
+### Next projects
+For the next project, I want to explore programming in C++ with Unreal and how combining it with Blueprints.
