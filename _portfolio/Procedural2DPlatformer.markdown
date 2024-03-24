@@ -2,7 +2,31 @@
 title: Procedural2DPlatformer
 permalink: /projects/procedural-2d-platformer/
 header:
-  teaser: /assets/img/Procedural2DPlatformerGeneration.gif
+  teaser: /assets/img/Procedural2DPlatformer/LevelGeneration.gif
+StateMachine:
+  - url: /assets/img/Procedural2DPlatformer/STDiagram.png
+    image_path: /assets/img/Procedural2DPlatformer/STDiagram.png
+StateMachineImplementation:
+  - url: /assets/img/Procedural2DPlatformer/STImplementation.png
+    image_path: /assets/img/Procedural2DPlatformer/STImplementation.png
+Debug:
+  - url: /assets/img/Procedural2DPlatformer/Debug.gif
+    image_path: /assets/img/Procedural2DPlatformer/Debug.gif
+Tool1:
+  - url: /assets/img/Procedural2DPlatformer/PCGTool1.png
+    image_path: /assets/img/Procedural2DPlatformer/PCGTool1.png
+Tool2:
+  - url: /assets/img/Procedural2DPlatformer/PCGTool2.png
+    image_path: /assets/img/Procedural2DPlatformer/PCGTool2.png
+Tool3:
+  - url: /assets/img/Procedural2DPlatformer/PCGTool3.png
+    image_path: /assets/img/Procedural2DPlatformer/PCGTool3.png
+Tool4:
+  - url: /assets/img/Procedural2DPlatformer/PCGTool4.png
+    image_path: /assets/img/Procedural2DPlatformer/PCGTool4.png
+Generation:
+  - url: /assets/img/Procedural2DPlatformer/LevelGeneration.gif
+    image_path: /assets/img/Procedural2DPlatformer/LevelGeneration.gif
 sidebar:
   - title: "Role"
     text: " <ul>
@@ -32,15 +56,47 @@ sidebar:
             </ul>"
 ---
 
-For project I had to build a 2D platformer using some form of PCG to construct the level. 
 
-## What I have done
+## Introduction
+For project I had to build a 2D platformer using some form of PCG to build three levels. 
 
-I focused on the Character controller and for the PCG I used Wave Function Collapse to compose the level from several predesigned chunks. 
-I also explored a Data driven approach that lead me building a tool to help designers using my algorithm. 
+## My Role
+I focused on the **character controller** and the **procedural content generation**.
+Then, I used a **data-driven** approach to the pcg to help me tweaking the parameters for the level generation.
 
-The tool let you create a level, decide which type of chunks to use and for each one dece its constraints. This date can be then saved in an XML file.
+### Character controller
+The book *AI for Games* by Ian Millington inspired me to use an AI agent structure for the character controller.
 
-For the character controller, I used a state machine and architected it like an AI following the structure illustrated by Ian Millington in "AI for Games". 
-In this case, user input are treated as knowledge captured by sensors. The WFC algorithm was built trying to let it being debuggable. 
-I used Unity's coroutine to let the user decide to construct the level in one frame or starting an animation of the algorithm that was really helpful during the development.
+{% include gallery id="StateMachine" caption="Character movement State Machine diagram."%}
+
+User input is handled as information captured by some *sensors*. Input and a geometry analysis of the level around the character consitutes the agent's *knowledge*.
+The decision making is implemented through **state machine**. 
+
+{% include gallery id="StateMachineImplementation" caption="Character movement State Machine C# implementation."%}
+
+I used visual debug features to help while building the controller.
+
+{% include gallery id="Debug" caption="Some visual debug for the character controller."%}
+
+The controller implements some classic jump mechanics:
+- **Coyote time**
+- **Jump buffer**
+- **Dynamic gravity**
+- High of jump linked to key holding (the jump will be much shorter if the key is released earlier)
+
+### PCG and tooling
+I experimented with the **wave function collapse** algorithm to generate a platformer level. 
+I designed several chucks for each level and defined constraints for them.
+
+All the data the algorithm works on (settings, constraints, etc.) is defined using a data driven through a XML file.
+I developed a tool inside Unity to edit this file directly in engine with a functional UI.
+
+{% include gallery id="Tool1" %}
+{% include gallery id="Tool2" %}
+{% include gallery id="Tool3" %}
+{% include gallery id="Tool4" caption="Custom tool to edit WFC settings."%}
+
+I used Unity's coroutine to let the user decide to construct the level in one frame or performing an animation of the algorithm. 
+This was really helpful during the development.
+
+{% include gallery id="Generation" caption="Animation of a level generation."%}

@@ -3,15 +3,15 @@ title: Stray
 permalink: /projects/stray/
 excerpt: "3D Adventure Platformer"
 header:
-  teaser: /assets/img/StrayOverview.gif
+  teaser: /assets/img/Stray/StrayOverview.gif
 Stray:
-  - image_path: /assets/img/StrayOverview.gif
+  - image_path: /assets/img/Stray/StrayOverview.gif
     alt: "Stray"
 sidebar:
   - title: "Role"
     text: " <ul>
                 <li>Gameplay Programmer</li>
-                <li> UI Programmer</li>
+                <li>UI Programmer</li>
                 <li>Level Designer</li> 
                 <li>Music Producer</li>
                 <li>Light Artist</li>
@@ -42,9 +42,9 @@ sidebar:
             </ul>"
 ---
 {% include gallery id="Stray"%}
-## Introduction to Stray
 
-Stray was a group project I did during a Game Programming course at the University of Calabria and also my first Unity project.
+## Introduction to Stray
+Stray (not that one!) was a group project I did during a Game Programming course at the University of Calabria and also my first Unity project.
 
 In this game the main character is a robot that tries to escape from a spaceship called Prometheus. 
 The main enemy is the spaceship AI that tries to stop the robot by blocking doors and alarming other robots in the area.
@@ -60,8 +60,7 @@ The main mechanics of this game are:
 - **Interact** with objects
 - Slaying two types of **enemies**: Drones and Mining Spiders 
 
-## What I have done
-
+## My Role
 I worked on several mechanincs using 3D vector maths concepts and Unity's Physics library. 
 
 I also explored many Unity's features:
@@ -80,18 +79,15 @@ I also explored many Unity's features:
 Finally, I also worked to the level design and music production for the game.
 
 ### Character Controller
-
 The main character movement is based on Unity's CharacterControllerComponent. It checks for the users' input and act accordingly to the current "state".
 The state is gathered querying the geometry around the players using raycasts (e.g. checking if they are gorunded, if they can jump or stand up).
 The actuation of the movement is not physics based, every tick the next position in calculated and used to move the underlying CharacterMovementComponent.
 
 ### Gravity powers
-
 Forces are used to implement the main character's powers. These powers let the player grab, for a certain duration, every object that are interactable (even the enemies).
 This can be used to reach high places or throw object to enemies (or enemies to walls).
 
 ## What I learned
-
 This was a deep dive into Unity and Game Programming. I made use of 3D math to control the player and to manipulate objects. 
 Even collisions were handled by hand using various type of casts.
 

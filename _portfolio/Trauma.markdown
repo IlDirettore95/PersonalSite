@@ -9,6 +9,7 @@ Trauma:
 TraumaStateMachine:
   - url: /assets/img/Trauma/TraumaStateMachineDiagram.png
     image_path: /assets/img/Trauma/TraumaStateMachineDiagram.png
+TraumaStateTree:
   - url: /assets/img/Trauma/TraumaStateTree.jpg
     image_path: /assets/img/Trauma/TraumaStateTree.jpg
 TraumaMetaSoundData:
@@ -65,7 +66,7 @@ sidebar:
 Trauma is a **3D First Person Survival Horror** project I have worked on during the DBGA Game Programming course.
 The game is about proceeding through a story, solving puzzles and being hunted by a monster called Trauma.
 
-Some of the important mechanics are the following:
+Some of the most important mechanics are:
 - Two main stats: *mental health* and *fear* 
     - Mental health is the same as "health"
     - Fear increases if the players stay in the dark or are chased by the Trauma
@@ -80,38 +81,40 @@ Some of the important mechanics are the following:
     - Save the game
 
 [//]: # "DI COSA MI SONO OCCUPATO"
-## What I have done
+## My Role
 I worked on:
 - Monster AI
-- Various interaction between the AI and environment
+- Various interactions between the AI and environment
 - Audio programming of loops and audio effects to give feedbacks to the players
 
 ### AI Programming
-My role was primarly architecting and implementing the main AI. 
-I started investigating Unreal tools for AI and researching for ways to model such an agent.
+My primarly role was architecting and implementing the main AI. 
+I started investigating Unreal tools for AI and researching ways to model an agent of this kind.
 
-{% include gallery id="TraumaStateMachine" caption="Trauma AI State Machine diagram vs StateTree implementation."%}
+{% include gallery id="TraumaStateMachine" caption="Trauma AI State Machine diagram."%}
+
+{% include gallery id="TraumaStateTree" caption="Trauma AI State Machine implementation."%}
 
 The Trauma has two "modes":
 - *Back mode*
 - *Front mode*
 
-While in the back mode, it is invisible and teleports in random places searching for the players. 
-It reactes to high fear or noises and, if it does, it will switch to fron mode.
+While in the back mode, it is invisible and it teleports in random places, searching for the players. 
+It reacts to high fear and noises and, if it does, it will switch to front mode.
 The players can detect it by hearing its noises.
 
 In front mode, the monster patrols between random rooms searching for the player. 
-If it hears or sees something it will start investigating that location. 
+If it hears or sees something, it will start investigating that location. 
 Then, if the players are detected, a chase will start.
 
 ### AI-world interfacing
 The AI needs information about the world. This is done mainly using Unreal **AIPerception** system, but there is more to it.
-When the player enters the safe room, the Trauma must disappear switching to the "None" state. 
+When the players enters the safe room, the Trauma disappears switching to the "None" state. 
 
-If the player can't be found during a chase, the monster will go searching around for *hiding spots*.
+If the players can't be found during a chase, the monster will go searching around for *hiding spots*.
 
 The players have a *light score* that is used to determine how well the monster can see them.
-When the players is in Trauma's sight cone they are not detected instantly. 
+When the players are in Trauma's sight cone they are not detected instantly. 
 If the monster's sight is stimulated enough, it will try to investigate towards that location and, eventually, will detect the players.
 
 ### Audio Programming
@@ -126,7 +129,7 @@ Several techiques, for example, low pass filters and adjustments on volume or pi
 
 {% include gallery id="TraumaMetaSoundExamples" caption="MetaSound examples to shape audio according to gameplay data."%}
 
-## What I have learned
+## What I learned
 This was my team's first Unreal project and the biggest one we worked on during the DBGA Game programming course. 
 Hence, we decided to only use Blueprints to make our life easier while exploring the Unreal toolset.
 

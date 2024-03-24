@@ -11,15 +11,15 @@ Trauma:
     alt: "Trauma"
 Procedural2DPlatformer:
   - url: /projects/procedural-2d-platformer/
-    image_path: /assets/img/Procedural2DPlatformerGeneration.gif
+    image_path: /assets/img/Procedural2DPlatformer/LevelGeneration.gif
     alt: "Procedural2DPlatformer"
 Stray:
   - url: /projects/stray/
-    image_path: /assets/img/StrayOverview.gif
+    image_path: /assets/img/Stray/StrayOverview.gif
     alt: "Stray"
 AStar:
   - url: /projects/astar/
-    image_path: /assets/img/AStar.gif
+    image_path: /assets/img/AStar/AStar.gif
     alt: "AStar"
 ---
 
