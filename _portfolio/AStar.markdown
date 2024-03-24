@@ -73,10 +73,10 @@ As Millington stated this is a good choice for outdoor maps, where there is a lo
 
 If there are no more open nodes and the goal was never reached, then a path won't exists.
 
-Of course, to retreive the optimal path, the end node must be the one with the smallest cost so far (the true cost from the start node to the current one).
+Of course, to retrieve the optimal path, the end node must be the one with the smallest cost so far (the true cost from the start node to the current one).
 This would remove any benefit to using A* instead of other algorithm like Dijkstra, so many implementations rely on the fact that a non-optimal path could be generated.
 
-The resulting path is retreived moving back from the end to the starting through all the selected nodes.
+The resulting path is retrieved moving back from the end to the starting through all the selected nodes.
 
 ### Node Array A*
 One common techniques is to trade memory for performance. 
@@ -89,4 +89,4 @@ The open list is still needed since the node with the smallest estimated cost so
 The complexity of finding the "best" current open node is O(n) (assuming an dynamic array data structure).
 A priority queue can be used to reduce this complexity to O(1) (insert and remove operations' cost increases to O(nlog(n))).
 
-{% include gallery id="AStarComparisons" caption="Comparison between the performances of the different algorithm implementations"%}
+{% include gallery id="AStarComparisons" caption="Comparison between the performances of the different algorithm implementations."%}
