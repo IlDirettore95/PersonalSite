@@ -8,6 +8,9 @@ header:
   overlay_image: /assets/img/AStar/AStar.gif
   overlay_color: "#000"
   overlay_filter: "0.4"
+  actions:
+    - label: "See the code on github"
+      url: "https://github.com/IlDirettore95/Pathfinding"
 
 AStar:
   - image_path: /assets/img/AStar/AStar.gif
