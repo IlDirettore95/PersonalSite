@@ -1,9 +1,14 @@
 ---
-title: A* Implementation and Profiling
+title: A* Implementations and Profiling
 permalink: /projects/astar/
-excerpt: "3D Adventure platformer"
+order: 4
+excerpt: "Implementations of the A* algorithm"
 header:
   teaser: /assets/img/AStar/AStar.gif
+  overlay_image: /assets/img/AStar/AStar.gif
+  overlay_color: "#000"
+  overlay_filter: "0.4"
+
 AStar:
   - image_path: /assets/img/AStar/AStar.gif
     url: /assets/img/AStar/AStar.gif
@@ -39,8 +44,8 @@ sidebar:
                 <li>1 week</li>
             </ul>"
 ---
-{% include gallery id="AStar"%}
-## Intro to A*
+<h2 id="intro-to-a" style="margin-top: 0em">Intro to A*<a class="header-link" href="#intro-to-a" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h2>
+
 This is an implementation of the famous A* algorithm. 
 This algorithm is primarly used in movement planning and solves the following problem:
 
@@ -77,6 +82,8 @@ Of course, to retrieve the optimal path, the end node must be the one with the s
 This would remove any benefit to using A* instead of other algorithm like Dijkstra, so many implementations rely on the fact that a non-optimal path could be generated.
 
 The resulting path is retrieved moving back from the end to the starting through all the selected nodes.
+
+{% include gallery id="AStar" caption="A* algorithm in action."%}
 
 ### Node Array A*
 One common techniques is to trade memory for performance. 

@@ -1,8 +1,13 @@
 ---
 title: Procedural2DPlatformer
 permalink: /projects/procedural-2d-platformer/
+excerpt: "2D Procedural Platformer"
+order: 2
 header:
   teaser: /assets/img/Procedural2DPlatformer/LevelGeneration.gif
+  overlay_image: /assets/img/Procedural2DPlatformer/LevelGeneration.gif
+  overlay_color: "#000"
+  overlay_filter: "0.4"
 StateMachine:
   - url: /assets/img/Procedural2DPlatformer/STDiagram.png
     image_path: /assets/img/Procedural2DPlatformer/STDiagram.png
@@ -55,9 +60,8 @@ sidebar:
                 <li>1 month</li>
             </ul>"
 ---
+<h2 id="introduction" style="margin-top: 0em">Introduction<a class="header-link" href="#introduction" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h2>
 
-
-## Introduction
 For project I had to build a 2D platformer using some form of PCG to build three levels. 
 
 ## My Role

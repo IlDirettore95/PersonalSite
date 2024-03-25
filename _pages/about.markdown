@@ -2,6 +2,7 @@
 layout: single
 title: About me
 permalink: /aboutme/
+author_profile: true
 ---
 
 [//]: # "PRESENTAZIONI"

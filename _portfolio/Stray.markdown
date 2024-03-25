@@ -1,9 +1,13 @@
 ---
 title: Stray
 permalink: /projects/stray/
+order: 3
 excerpt: "3D Adventure Platformer"
 header:
   teaser: /assets/img/Stray/StrayOverview.gif
+  overlay_image: /assets/img/Stray/StrayOverview.gif
+  overlay_color: "#000"
+  overlay_filter: "0.4"
 Stray:
   - image_path: /assets/img/Stray/StrayOverview.gif
     alt: "Stray"
@@ -41,9 +45,8 @@ sidebar:
                 <li>5 months</li>
             </ul>"
 ---
-{% include gallery id="Stray"%}
+<h2 id="introduction-to-stray" style="margin-top:0em">Introduction to Stray<a class="header-link" href="#introduction-to-stray" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h2>
 
-## Introduction to Stray
 Stray (not that one!) was a group project I did during a Game Programming course at the University of Calabria and also my first Unity project.
 
 In this game the main character is a robot that tries to escape from a spaceship called Prometheus. 
@@ -59,6 +62,8 @@ The main mechanics of this game are:
 - **Gravity powers** (very similar to HalfLife2 Gravity Gun)
 - **Interact** with objects
 - Slaying two types of **enemies**: Drones and Mining Spiders 
+
+{% include gallery id="Stray" caption="Overview of Stray's mechanics."%}
 
 ## My Role
 I worked on several mechanincs using 3D vector maths concepts and Unity's Physics library. 

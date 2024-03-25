@@ -1,9 +1,16 @@
 ---
 title: Trauma
+order: 1
 permalink: /projects/trauma/
 excerpt: "3D Survival Horror"
 header:
   teaser: /assets/img/Trauma/TraumaAppeared.gif
+  overlay_image: /assets/img/Trauma/TraumaAppeared.gif
+  actions:
+    - label: "Go to Github"
+      url: "/projects/trauma/"
+    - label: "Go to Github"
+      url: "/projects/trauma/"
 Trauma:
   - image_path: /assets/img/Trauma/Trauma.png
 TraumaStateMachine:
@@ -59,10 +66,10 @@ sidebar:
                 <li>3 months</li>
             </ul>"
 ---
-{% include gallery id="Trauma"%}
 
 [//]: # "DI CHE PROGETTO SI TRATTA"
-## Introduction to Trauma
+<h2 id="introduction-to-trauma" class="" style="margin-top: 0em">Introduction to Trauma<a class="header-link" href="#introduction-to-trauma" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h2>
+
 Trauma is a **3D First Person Survival Horror** project I have worked on during the DBGA Game Programming course.
 The game is about proceeding through a story, solving puzzles and being hunted by a monster called Trauma.
 

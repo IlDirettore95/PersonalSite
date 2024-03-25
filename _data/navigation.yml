@@ -2,13 +2,31 @@
 main:
   # - title: "Quick-Start Guide"
   # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About me"
-    url: /aboutme/
   - title: "Portfolio"
     url: /portfolio/
+  - title: "About me"
+    url: /aboutme/
+  - title: "Resume"
+    url: /assets/img/Resume.pdf
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+nav_bar:
+  - title: "Unreal projects"
+    children:
+      - title: "Trauma"
+        url: /projects/trauma/  
+  - title: "Unity projects"
+    children:
+      - title: "2D Procedural Platformer"
+        url: /projects/procedural-2d-platformer/  
+      - title: "Stray"
+        url: /projects/stray/ 
+  - title: "C++ projects"      
+    children:
+      - title: "A* Implementations and Profiling"
+        url: /projects/astar/ 
