@@ -6,11 +6,6 @@ excerpt: "3D Survival Horror"
 header:
   teaser: /assets/img/Trauma/TraumaAppeared.gif
   overlay_image: /assets/img/Trauma/TraumaAppeared.gif
-  actions:
-    - label: "Go to Github"
-      url: "/projects/trauma/"
-    - label: "Go to Github"
-      url: "/projects/trauma/"
 Trauma:
   - image_path: /assets/img/Trauma/Trauma.png
 TraumaStateMachine:
