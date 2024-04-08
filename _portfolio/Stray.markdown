@@ -8,6 +8,9 @@ header:
   overlay_image: /assets/img/Stray/StrayOverview.gif
   overlay_color: "#000"
   overlay_filter: "0.4"
+  actions:
+    - label: "Go to Github"
+      url: "https://github.com/IlDirettore95/VR_Project/tree/main/Unified2/Assets/Scripts"
 Stray:
   - image_path: /assets/img/Stray/StrayOverview.gif
     alt: "Stray"

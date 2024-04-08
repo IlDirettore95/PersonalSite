@@ -88,6 +88,7 @@ I worked on:
 - Monster AI
 - Various interactions between the AI and environment
 - Audio programming of loops and audio effects to give feedbacks to the players
+- Helping/Bugfixes on other gameplay features
 
 ### AI Programming
 My primarly role was architecting and implementing the main AI. 

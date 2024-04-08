@@ -9,7 +9,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.4"
   actions:
-    - label: "See the code on github"
+    - label: "Go to Github"
       url: "https://github.com/IlDirettore95/Pathfinding"
 
 AStar:

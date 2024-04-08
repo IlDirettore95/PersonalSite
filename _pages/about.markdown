@@ -26,3 +26,12 @@ Thanks to my background, I am enthusiastic to work in a multi-disciplinary team.
 I am a self-taught electronic musician and I worked on the music production of many of my projects. 
 My favourite videogames are the Gothic saga and Dark Souls. 
 I also like Tabletop RPGs and I have several years of experience as a D&D game master. 
+
+# What I am studying
+
+I am currently focusing on AI and software architectures. 
+
+These are some of the books I am studying:
+- AI for Games, Ian Millington
+- Game Programming Patterns, Robert Nystrom
+- Game Engine Architecture, Jason Gregory

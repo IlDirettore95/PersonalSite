@@ -7,7 +7,10 @@ header:
   teaser: /assets/img/Procedural2DPlatformer/LevelGeneration.gif
   overlay_image: /assets/img/Procedural2DPlatformer/LevelGeneration.gif
   overlay_color: "#000"
-  overlay_filter: "0.4"
+  overlay_filter: "0.6"
+  actions:
+    - label: "Go to GitHub"
+      url: "https://github.com/IlDirettore95/Basic_2D_Platformer/tree/main"
 StateMachine:
   - url: /assets/img/Procedural2DPlatformer/STDiagram.png
     image_path: /assets/img/Procedural2DPlatformer/STDiagram.png
