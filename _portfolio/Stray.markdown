@@ -1,7 +1,7 @@
 ---
 title: Stray
 permalink: /projects/stray/
-order: 3
+order: 2
 excerpt: "3D Adventure Platformer"
 header:
   teaser: /assets/img/Stray/StrayOverview.gif
@@ -48,7 +48,7 @@ sidebar:
                 <li>5 months</li>
             </ul>"
 ---
-<h2 id="introduction-to-stray" style="margin-top:0em">Introduction to Stray<a class="header-link" href="#introduction-to-stray" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h2>
+<h2 id="introduction-to-stray" style="margin-top:0em">Introduction to Stray</h2>
 
 Stray (not that one!) was a group project I did during a Game Programming course at the University of Calabria and also my first Unity project.
 

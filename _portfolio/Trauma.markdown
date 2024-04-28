@@ -63,7 +63,7 @@ sidebar:
 ---
 
 [//]: # "DI CHE PROGETTO SI TRATTA"
-<h2 id="introduction-to-trauma" class="" style="margin-top: 0em">Introduction to Trauma<a class="header-link" href="#introduction-to-trauma" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h2>
+<h2 id="introduction-to-trauma" class="" style="margin-top: 0em">Introduction to Trauma</h2>
 
 Trauma is a **3D First Person Survival Horror** project I have worked on during the DBGA Game Programming course.
 The game is about proceeding through a story, solving puzzles and being hunted by a monster called Trauma.

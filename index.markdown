@@ -27,6 +27,10 @@ Stray:
   - url: /projects/stray/
     image_path: /assets/img/Stray/StrayOverview.gif
     alt: "Stray"
+MurusGallicusBot:
+  - url: /projects/murus-gallicus-bot/
+    image_path: /assets/img/MurusGallicus/MurusGallicus.jpg
+    alt: "MurusGallicus"
 AStar:
   - url: /projects/astar/
     image_path: /assets/img/AStar/AStar.gif
@@ -45,18 +49,6 @@ AStar:
 {: style="text-align: left; font-size: 0.7em;"}
 {% include gallery id="Trauma"%}
 ---
-# Procedural 2D Platformer
-{: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
-- **Role**: Gameplay Programmer and Tool Programmer
-- **Genre**: Platformer
-- **Style**: 2D
-- **Engine**: Unity3D
-- **Tech**: C#, PCG, State machines and Unity custom window
-- **Team**: Solo project
-- **Total time**: 1 month
-{: style="text-align: left; font-size: 0.7em;"}
-{% include gallery id="Procedural2DPlatformer"%}
----
 # Stray
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: Gameplay Programmer, UI Programmer, Level Designer, Music Producer and Light Artist
@@ -69,13 +61,35 @@ AStar:
 {: style="text-align: left; font-size: 0.7em;"}
 {% include gallery id="Stray" %}
 ---
+# Murus Gallicus Bot
+{: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
+- **Role**: AI Programmer
+- **Engine**: No engine
+- **Tech**: Java
+- **Team**: 3 people
+- **Total time**: 3 months
+{: style="text-align: left; font-size: 0.7em;"}
+{% include gallery id="MurusGallicusBot"%}
+---
 # A* Implementations and Profiling
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: C++ Programmer
 - **Engine**: No engine
-- **Tech**: C++, STL library
+- **Tech**: C++ and STL
 - **Team**: 2 people
 - **Total time**: 1 week
 {: style="text-align: left; font-size: 0.7em;"}
 {% include gallery id="AStar"%}
+---
+# Procedural 2D Platformer
+{: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
+- **Role**: Gameplay Programmer and Tool Programmer
+- **Genre**: Platformer
+- **Style**: 2D
+- **Engine**: Unity3D
+- **Tech**: C#, PCG, State machines and Unity custom window
+- **Team**: Solo project
+- **Total time**: 1 month
+{: style="text-align: left; font-size: 0.7em;"}
+{% include gallery id="Procedural2DPlatformer"%}
 ---

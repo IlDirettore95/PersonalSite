@@ -22,11 +22,15 @@ nav_bar:
         url: /projects/trauma/  
   - title: "Unity projects"
     children:
-      - title: "2D Procedural Platformer"
-        url: /projects/procedural-2d-platformer/  
       - title: "Stray"
         url: /projects/stray/ 
+      - title: "2D Procedural Platformer"
+        url: /projects/procedural-2d-platformer/  
   - title: "C++ projects"      
     children:
       - title: "A* Implementations and Profiling"
         url: /projects/astar/ 
+  - title: "Java projects"      
+    children:
+      - title: "Murus Gallicus Bot"
+        url: /projects/murus-gallicus-bot/

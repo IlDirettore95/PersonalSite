@@ -14,7 +14,7 @@ header:
 
 AStar:
   - image_path: /assets/img/AStar/AStar.gif
-    url: /assets/img/AStar/AStar.gif
+    url: /assets/img/AStar/AStar.gif 
 AStarComparisons:
   - image_path: /assets/img/AStar/AStarComparisons.png
     url: /assets/img/AStar/AStarComparisons.png
@@ -47,7 +47,7 @@ sidebar:
                 <li>1 week</li>
             </ul>"
 ---
-<h2 id="intro-to-a" style="margin-top: 0em">Intro to A*<a class="header-link" href="#intro-to-a" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h2>
+<h2 id="intro-to-a" style="margin-top: 0em">Intro to A*</h2>
 
 This is an implementation of the famous A* algorithm. 
 This algorithm is primarly used in movement planning and solves the following problem:
