@@ -47,6 +47,7 @@ AStar:
 - **Team**: 8 people
 - **Total time**: 3 months
 {: style="text-align: left; font-size: 0.7em;"}
+[Read more about this project](/projects/trauma/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
 {% include gallery id="Trauma"%}
 ---
 # Stray
@@ -59,6 +60,7 @@ AStar:
 - **Team**: 3 people
 - **Total time**: 5 months
 {: style="text-align: left; font-size: 0.7em;"}
+[Read more about this project](/projects/stray/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
 {% include gallery id="Stray" %}
 ---
 # Murus Gallicus Bot
@@ -69,6 +71,7 @@ AStar:
 - **Team**: 3 people
 - **Total time**: 3 months
 {: style="text-align: left; font-size: 0.7em;"}
+[Read more about this project](/projects/murus-gallicus-bot/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
 {% include gallery id="MurusGallicusBot"%}
 ---
 # A* Implementations and Profiling
@@ -79,6 +82,7 @@ AStar:
 - **Team**: 2 people
 - **Total time**: 1 week
 {: style="text-align: left; font-size: 0.7em;"}
+[Read more about this project](/projects/astar/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
 {% include gallery id="AStar"%}
 ---
 # Procedural 2D Platformer
@@ -91,5 +95,6 @@ AStar:
 - **Team**: Solo project
 - **Total time**: 1 month
 {: style="text-align: left; font-size: 0.7em;"}
+[Read more about this project](/projects/procedural-2d-platformer/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
 {% include gallery id="Procedural2DPlatformer"%}
 ---
