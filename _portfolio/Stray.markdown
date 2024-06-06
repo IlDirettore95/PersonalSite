@@ -21,7 +21,6 @@ sidebar:
                 <li>UI Programmer</li>
                 <li>Level Designer</li> 
                 <li>Music Producer</li>
-                <li>Light Artist</li>
             </ul>"
   - title: "Responsibilities"
     text: " <ul>
@@ -48,7 +47,16 @@ sidebar:
                 <li>5 months</li>
             </ul>"
 ---
-<h2 id="introduction-to-stray" style="margin-top:0em">Introduction to Stray</h2>
+
+<h2 id="what_i_learned" style="margin-top:0em">What I learned</h2>
+
+This was a deep dive into Unity and Game Programming. 
+
+I made use of 3D math and the Unity physics engine to control the main character and manipulate objects.
+I applied my knowledge of algorithms and data structures and games to implement gameplay features effectively.
+I used many features of the Unity Engine such as scripting, physics, UI and rendering.
+
+## Intrduction to Stray
 
 Stray (not that one!) was a group project I did during a Game Programming course at the University of Calabria and also my first Unity project.
 
@@ -94,10 +102,3 @@ The actuation of the movement is not physics based, every tick the next position
 ### Gravity powers
 Forces are used to implement the main character's powers. These powers let the player grab, for a certain duration, every object that are interactable (even the enemies).
 This can be used to reach high places or throw object to enemies (or enemies to walls).
-
-## What I learned
-This was a deep dive into Unity and Game Programming. I made use of 3D math to control the player and to manipulate objects. 
-Even collisions were handled by hand using various type of casts.
-
-For the next project I thought that would have been essential starting to structure the software better using Design Patterns.
-Also an event driven approeach could save me a lot of headache.

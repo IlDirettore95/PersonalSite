@@ -31,7 +31,6 @@ sidebar:
                 <li>Gameplay Programmer</li> 
                 <li>Audio Programmer</li>
                 <li>Music Producer</li>
-                <li>Light Artist</li>
             </ul>"
   - title: "Responsibilities"
     text: " <ul>
@@ -63,8 +62,28 @@ sidebar:
 ---
 
 [//]: # "DI CHE PROGETTO SI TRATTA"
-<h2 id="introduction-to-trauma" class="" style="margin-top: 0em">Introduction to Trauma</h2>
 
+<h2 id="what_i_learned" class="" style="margin-top: 0em">What I learned</h2>
+
+This was my team's first Unreal project and the biggest one we worked on during the DBGA Game programming course. 
+Hence, we decided to only use Blueprints to make our life easier while exploring the Unreal toolset.
+
+I worked side by side with a designer on the iterations on the Trauma AI.
+We started using Behaviour Trees, but it was quickly clear that our ideas were very "state driven" and hierarchical.
+Hence, we switched to Unreal's new State Tree.
+
+I worked following the agent architecture presented in *Artificial Intelligence: A Modern Approach* by Russel and Norvig, trying to adapt to the Unreal framework.
+Moreover, I researched various techniques presented in *AI for Games* by Ian Millington.
+
+In summary, I used several tools provided by Unreal Eninge 5:
+- Blueprints
+- Behaviour Trees
+- State Trees
+- AI Perception
+- EQS (Environment Query System)
+- MetaSound
+
+## Introduction to Trauma
 Trauma is a **3D First Person Survival Horror** project I have worked on during the DBGA Game Programming course.
 The game is about proceeding through a story, solving puzzles and being hunted by a monster called Trauma.
 
@@ -131,22 +150,3 @@ This approach let me test the audio of (almost) the entire main game loop direct
 Several techiques, for example, low pass filters and adjustments on volume or pitch, were used to emphasize game loop situations. 
 
 {% include gallery id="TraumaMetaSoundExamples" caption="MetaSound examples to shape audio according to gameplay data."%}
-
-## What I learned
-This was my team's first Unreal project and the biggest one we worked on during the DBGA Game programming course. 
-Hence, we decided to only use Blueprints to make our life easier while exploring the Unreal toolset.
-
-I worked side by side with a designer on the iterations on the Trauma AI.
-We started using Behaviour Trees, but it was quickly clear that our ideas were very "state driven" and hierarchical.
-Hence, we switched to Unreal's new State Tree.
-
-I worked following the agent architecture presented in *Artificial Intelligence: A Modern Approach* by Russel and Norvig, trying to adapt to the Unreal framework.
-Moreover, I researched various techniques presented in *AI for Games* by Ian Millington.
-
-In summary, I used several tools provided by Unreal Eninge 5:
-- Blueprints
-- Behaviour Trees
-- State Trees
-- AI Perception
-- EQS (Environment Query System)
-- MetaSound

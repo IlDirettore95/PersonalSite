@@ -4,7 +4,7 @@
 
 layout: archive
 author_profile: true
-title: Highlighted Projects
+title: Game Programming Portfolio
 sidebar:
   title: "Projects"
   nav: nav_bar
@@ -13,7 +13,7 @@ header:
   overlay_image: /assets/img/Trauma/TraumaNoTitle.png
   overlay_color: "#000"
   overlay_filter: "0.4"
-excerpt: "Hi, I am Giorgio Michele De Giorgio and these are my highlighted projects"
+excerpt: "My name is Giorgio Michle De Giorgio. I am a passionate Game Developer focused on applications optimization and projects architecture. I have experiences in Gameplay, AI, Tool, Audio and UI programming using both Unity and Unreal."
 
 Trauma:
   - url: /projects/trauma/
@@ -39,7 +39,7 @@ AStar:
 <h1 style="text-align: center; font-size: 1.5em; margin-top: 0em" id="trauma">Trauma</h1>
 
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
-- **Role**: AI Programmer, Gameplay Programmer, Audio Programmer, Music Producer and Light Artist
+- **Role**: AI Programmer, Gameplay Programmer, Audio Programmer and Music Producer
 - **Genre**: Survival Horror
 - **Style**: 3D - First person
 - **Engine**: Unreal Engine 5
@@ -52,7 +52,7 @@ AStar:
 ---
 # Stray
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
-- **Role**: Gameplay Programmer, UI Programmer, Level Designer, Music Producer and Light Artist
+- **Role**: Gameplay Programmer, UI Programmer, Level Designer and Music Producer
 - **Genre**: Adventure Platformer
 - **Style**: 3D - First person
 - **Engine**: Unity
