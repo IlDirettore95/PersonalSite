@@ -13,7 +13,7 @@ header:
   overlay_image: /assets/img/Trauma/TraumaNoTitle.png
   overlay_color: "#000"
   overlay_filter: "0.4"
-excerpt: "My name is Giorgio Michle De Giorgio. I am a passionate Game Developer focused on applications optimization and projects architecture. I have experiences in Gameplay, AI, Tool, Audio and UI programming using both Unity and Unreal."
+excerpt: "My name is Giorgio Michele De Giorgio. I am a passionate Game Developer focused on applications optimization and projects architecture. I have experiences in Gameplay, AI, Tooling, Audio and UI programming using both Unity and Unreal."
 
 Trauma:
   - url: /projects/trauma/
