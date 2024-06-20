@@ -52,5 +52,15 @@ sidebar:
 
 <h2 id="main_goals" class="" style="margin-top: 0em">Main goals</h2>
 
+This project is a working in progress where I tried to do some experiments within UnrealEngine aiming to simulate Cyberpunk2077 AI.
+
+I implemented an AI system using C++ and Blueprints which reproduce the "local network" of Cyberpunk2077 enemies.
+This *zone* is used by enemies to communicate and share information.
+
+I tried to visualize much of the beliefs and decision of the agents through gizmos.
+
 {% include gallery id="CyberpunkDebugGizmos" caption="AI system gizmos."%}
+
+I created a tool that allow the developer to inspect the knowledge base of an AI agent and command some action.
+
 {% include gallery id="CyberpunkAIDebug" caption="AI knowledge inspected through the debug tool."%}
