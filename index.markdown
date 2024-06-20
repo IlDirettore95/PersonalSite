@@ -14,7 +14,10 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.4"
 excerpt: "My name is Giorgio Michele De Giorgio. I am a passionate Game Developer focused on applications optimization and projects architecture. I have experiences in Gameplay, AI, Tooling, Audio and UI programming using both Unity and Unreal."
-
+Cyberpunk2077AIExperiments:
+  - url: /projects/cyberpunk/
+    image_path: /assets/img/Cyberpunk/CyberpunkScreenShot.png
+    alt: "Cyberpunk"
 Trauma:
   - url: /projects/trauma/
     image_path: /assets/img/Trauma/TraumaAppeared.gif
@@ -36,8 +39,21 @@ AStar:
     image_path: /assets/img/AStar/AStar.gif
     alt: "AStar"
 ---
-<h1 style="text-align: center; font-size: 1.5em; margin-top: 0em" id="trauma">Trauma</h1>
+<h1 style="text-align: center; font-size: 1.5em; margin-top: 0em" id="trauma">Cyberpunk2077 AI Experiments</h1>
 
+{: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
+- **Role**: AI Programmer, Tool Programmer, Gameplay Programmer
+- **Genre**: Action-RPG
+- **Style**: 3D - First person
+- **Engine**: Unreal Engine 5
+- **Tech**: C++, Blueprints, State Trees, AIPerception and Environment Query System (EQS)
+- **Team**: 5 people
+- **Total time**: Work in progress
+{: style="text-align: left; font-size: 0.7em;"}
+[Read more about this project](/projects/cyberpunk/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
+{% include gallery id="Cyberpunk2077AIExperiments"%}
+---
+# Trauma
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: AI Programmer, Gameplay Programmer, Audio Programmer and Music Producer
 - **Genre**: Survival Horror

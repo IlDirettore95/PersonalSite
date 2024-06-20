@@ -1,7 +1,7 @@
 ---
 title: Murus Gallicus Bot
 permalink: /projects/murus-gallicus-bot/
-order: 3
+order: 4
 excerpt: "Murus Gallicus AI bot"
 header:
   teaser: /assets/img/MurusGallicus/MurusGallicus.jpg

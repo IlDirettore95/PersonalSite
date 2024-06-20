@@ -2,7 +2,7 @@
 title: Procedural2DPlatformer
 permalink: /projects/procedural-2d-platformer/
 excerpt: "2D Procedural Platformer"
-order: 5
+order: 6
 header:
   teaser: /assets/img/Procedural2DPlatformer/LevelGeneration.gif
   overlay_image: /assets/img/Procedural2DPlatformer/LevelGeneration.gif

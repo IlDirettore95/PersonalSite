@@ -1,7 +1,7 @@
 ---
 title: Stray
 permalink: /projects/stray/
-order: 2
+order: 3
 excerpt: "3D Adventure Platformer"
 header:
   teaser: /assets/img/Stray/StrayOverview.gif
