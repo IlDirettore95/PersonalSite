@@ -18,19 +18,23 @@ main:
 nav_bar:
   - title: "Unreal projects"
     children:
-      - title: "Trauma"
+      - title: "- Cyberpunk 2077 AI Experiments"
+        url: /projects/cyberpunk/
+      - title: "- Trauma"
         url: /projects/trauma/  
   - title: "Unity projects"
     children:
-      - title: "Stray"
+      - title: "- Stray"
         url: /projects/stray/ 
-      - title: "2D Procedural Platformer"
+      - title: "- 2D Procedural Platformer"
         url: /projects/procedural-2d-platformer/  
   - title: "C++ projects"      
     children:
-      - title: "A* Implementations and Profiling"
+      - title: "- Steering Behaviours Demonstration"
+        url: /projects/steering-behaviours/
+      - title: "- A* Implementations and Profiling"
         url: /projects/astar/ 
   - title: "Java projects"      
     children:
-      - title: "Murus Gallicus Bot"
+      - title: "- Murus Gallicus Bot"
         url: /projects/murus-gallicus-bot/

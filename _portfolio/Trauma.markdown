@@ -1,6 +1,6 @@
 ---
 title: Trauma
-order: 2
+order: 3
 permalink: /projects/trauma/
 excerpt: "3D Survival Horror"
 header:

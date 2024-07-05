@@ -39,19 +39,32 @@ AStar:
     image_path: /assets/img/AStar/AStar.gif
     alt: "AStar"
 ---
-<h1 style="text-align: center; font-size: 1.5em; margin-top: 0em" id="trauma">Cyberpunk2077 AI Experiments</h1>
+<h1 style="text-align: center; font-size: 1.5em; margin-top: 0em" id="trauma">Cyberpunk 2077 AI Experiments</h1>
 
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: AI Programmer, Tool Programmer, Gameplay Programmer
 - **Genre**: Action-RPG
 - **Style**: 3D - First person
 - **Engine**: Unreal Engine 5
-- **Tech**: C++, Blueprints, State Trees, AIPerception and Environment Query System (EQS)
+- **Tech**: C++, Blueprints, State Trees, AI Perception and Environment Query System (EQS)
 - **Team**: 5 people
 - **Total time**: Work in progress
 {: style="text-align: left; font-size: 0.7em;"}
 [Read more about this project](/projects/cyberpunk/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
 {% include gallery id="Cyberpunk2077AIExperiments"%}
+---
+---
+# Steering Behaviours Demonstration
+{: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
+- **Role**: AI Programmer, Tool Programmer
+- **Engine**: No engine
+- **Tech**: C++, STL and SFML
+- **Team**: Solo project
+- **Total time**: 1 month
+{: style="text-align: left; font-size: 0.7em;"}
+[Read more about this project](/projects/steering-behaviours/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
+{% include gallery id="Trauma"%}
+---
 ---
 # Trauma
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
@@ -59,12 +72,13 @@ AStar:
 - **Genre**: Survival Horror
 - **Style**: 3D - First person
 - **Engine**: Unreal Engine 5
-- **Tech**: Blueprints, Behaviour Trees, State Trees, AIPerception, Environment Query System (EQS) and MetaSound
+- **Tech**: Blueprints, Behaviour Trees, State Trees, AI Perception, Environment Query System (EQS) and MetaSound
 - **Team**: 8 people
 - **Total time**: 3 months
 {: style="text-align: left; font-size: 0.7em;"}
 [Read more about this project](/projects/trauma/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
 {% include gallery id="Trauma"%}
+---
 ---
 # Stray
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
@@ -79,6 +93,7 @@ AStar:
 [Read more about this project](/projects/stray/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
 {% include gallery id="Stray" %}
 ---
+---
 # Murus Gallicus Bot
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: AI Programmer
@@ -90,6 +105,7 @@ AStar:
 [Read more about this project](/projects/murus-gallicus-bot/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
 {% include gallery id="MurusGallicusBot"%}
 ---
+---
 # A* Implementations and Profiling
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: C++ Programmer
@@ -100,6 +116,7 @@ AStar:
 {: style="text-align: left; font-size: 0.7em;"}
 [Read more about this project](/projects/astar/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
 {% include gallery id="AStar"%}
+---
 ---
 # Procedural 2D Platformer
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
