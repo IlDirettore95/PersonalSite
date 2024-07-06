@@ -50,20 +50,20 @@ sidebar:
 
 <h2 id="main_goals" class="" style="margin-top: 0em">Project Overview</h2>
 
-This project is a demonstration of some of the most famous steering behaviours.
+This project is a demonstration of some of the most popular steering behaviours.
 
-They are implemented completely in C++. A basic ECS is used as game architecture and the SFML library handles the graphics backend.
-Steering parameter are editable through a GUI window implemented using IMGUI.
+It is completely implemented in C++. A simple ECS is used as game architecture and the SFML library handles the graphics backend.
+The steering parameters are editable through a GUI window implemented using IMGUI.
 
-I implemented some of the algorithms cited by Ian Millington in its book "AI for Games" and I also used an ECS following the c++ game programming lessons taught by Dave Churchill.
-This was a deep dive into AI movement and the C++ langauge. I didn't use an existing game engine like Unreal or Unity on purpose, so I could get more hands-on experience in c++ and the so popular ECS architecture.
+I implemented some of the algorithms mentioned by Ian Millington in his book "AI for Games" and I also used an ECS following the C++ game programming lessons taught by Dave Churchill.
+This was a deep dive into the AI movement and the C++ language. I deliberately didn't use an existing game engine like Unreal or Unity to get more hands-on experience with C++ and the so popular ECS architecture.
 
 ## Steering vs Kinematic movement
-One of the first thing to point out is the difference between a kinematic movement algorithm and a steering one.
-If the velocity of an agent change instantly then a kinematic algorithm should be used. This is not possible in the real world, the velocity of an object can change only if a force is applied (i.e. an acceleration). 
-We call a movement algorithm which controls the velocity of an object indirectly through applying an acceleration a "steering behaviour".
+One of the first things to point out is the difference between a kinematic movement algorithm and a steering one.
+If the velocity of an agent changes instantly, then a kinematic algorithm should be used. This is not possible in the real world, the velocity of an object can change only if a force is applied (i.e. an acceleration). 
+We call a movement algorithm that controls the velocity of an object indirectly through applying an acceleration a "steering behaviour".
 
-Besides this distiction, this type of algorithm can be used to achieve a variety of things like: chasing another agent, avoid collisions, following a path, etc.
+Aside from this distinction, this type of algorithm can be used to achieve a variety of things, such as: chasing another agent, avoiding collisions, following a path, etc.
 
 ## Steering Behaviours
 In this project, I implemented 7 steering behaviours: Seek, Flee, Arrive, Wander, Pursue, Evade and PathFollowing.
