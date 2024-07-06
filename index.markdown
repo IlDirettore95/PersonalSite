@@ -18,6 +18,10 @@ Cyberpunk2077AIExperiments:
   - url: /projects/cyberpunk/
     image_path: /assets/img/Cyberpunk/CyberpunkScreenShot.png
     alt: "Cyberpunk"
+SteeringBehaviours:
+  - url: /projects/steering-behaviours/
+    image_path: /assets/img/SteeringBehaviours/PathFollowing.gif
+    alt: "SteeringBehaviours"
 Trauma:
   - url: /projects/trauma/
     image_path: /assets/img/Trauma/TraumaAppeared.gif
@@ -63,7 +67,7 @@ AStar:
 - **Total time**: 1 month
 {: style="text-align: left; font-size: 0.7em;"}
 [Read more about this project](/projects/steering-behaviours/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
-{% include gallery id="Trauma"%}
+{% include gallery id="SteeringBehaviours"%}
 ---
 ---
 # Trauma

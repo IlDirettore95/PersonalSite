@@ -1,11 +1,19 @@
 ---
-title: Steering Behaviours Demonastration
+title: Steering Behaviours Demonstration
 order: 2
 permalink: /projects/steering-behaviours/
 excerpt: "Steering Behaviours Demonstration"
 header:
-  teaser: /assets/img/Cyberpunk/CyberpunkScreenShot.png
-  overlay_image: /assets/img/Cyberpunk/CyberpunkScreenShot.png
+  teaser: /assets/img/SteeringBehaviours/PathFollowing.gif
+  overlay_image: /assets/img/SteeringBehaviours/PathFollowing.gif
+  overlay_color: "#000"
+  overlay_filter: "0.4"
+  actions:
+    - label: "Go to Github"
+      url: "https://github.com/IlDirettore95/AIExperiments/tree/main"
+SeekFlee:
+  - url: /assets/img/SteeringBehaviours/SeekFlee.gif
+    image_path: /assets/img/SteeringBehaviours/SeekFlee.gif
 sidebar:
   - title: "Role"
     text: " <ul>
@@ -15,6 +23,7 @@ sidebar:
   - title: "Responsibilities"
     text: " <ul>
                 <li>AI movement</li>
+                <li>ECS </li>
                 <li>Debug tools</li>
             </ul>"
   - title: "Engine"
@@ -39,8 +48,24 @@ sidebar:
 
 [//]: # "DI CHE PROGETTO SI TRATTA"
 
-<h2 id="main_goals" class="" style="margin-top: 0em">Main goals</h2>
+<h2 id="main_goals" class="" style="margin-top: 0em">Project Overview</h2>
 
-[//]: # "In questo progetto mi sono occupato di un argomento fondamentale dell'AI per videogiochi: gli steering behaviour."
-[//]: # "Ho costruito delle dimostrazioni dei behaviour piu comuni: Seek, Flee, Arrive, Wander, Pursue, Evande e Path Following."
-[//]: # "I parametri dell'AI sono modificabili in realtime ed e possibile abilitare della grafica di supporto per visionare meglio il compoprtamento dell'agente."
+This project is a demonstration of some of the most famous steering behaviours.
+
+They are implemented completely in C++. A basic ECS is used as game architecture and the SFML library handles the graphics backend.
+Steering parameter are editable through a GUI window implemented using IMGUI.
+
+I implemented some of the algorithms cited by Ian Millington in its book "AI for Games" and I also used an ECS following the c++ game programming lessons taught by Dave Churchill.
+This was a deep dive into AI movement and the C++ langauge. I didn't use an existing game engine like Unreal or Unity on purpose, so I could get more hands-on experience in c++ and the so popular ECS architecture.
+
+## Steering vs Kinematic movement
+One of the first thing to point out is the difference between a kinematic movement algorithm and a steering one.
+If the velocity of an agent change instantly then a kinematic algorithm should be used. This is not possible in the real world, the velocity of an object can change only if a force is applied (i.e. an acceleration). 
+We call a movement algorithm which controls the velocity of an object indirectly through applying an acceleration a "steering behaviour".
+
+Besides this distiction, this type of algorithm can be used to achieve a variety of things like: chasing another agent, avoid collisions, following a path, etc.
+
+## Steering Behaviours
+In this project, I implemented 7 steering behaviours: Seek, Flee, Arrive, Wander, Pursue, Evade and PathFollowing.
+
+{% include gallery id="SeekFlee" caption="The Seek/Flee steering behaviours."%}
