@@ -30,6 +30,8 @@ nav_bar:
     children:
       - title: "- Stray"
         url: /projects/stray/ 
+      - title: "- The Strongest Strongman"
+        url: /projects/the-strongest-strongman/  
       - title: "- 2D Procedural Platformer"
         url: /projects/procedural-2d-platformer/  
   - title: "C++ projects"      
