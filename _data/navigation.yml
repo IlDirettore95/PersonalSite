@@ -2,12 +2,16 @@
 main:
   # - title: "Quick-Start Guide"
   # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Portfolio"
-    url: /portfolio/
+  - title: "Team Projects"
+    url: /team_projects/
+  - title: "Personal Projects"
+    url: /personal_projects/
+  - title: "Game Jams"
+    url: /game_jams/
   - title: "About me"
     url: /aboutme/
   - title: "Resume"
-    url: /assets/img/Resume_GiorgioMicheleDeGiorgio.pdf
+    url: /assets/img/CV_GiorgioMicheleDeGiorgio.pdf
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
@@ -22,7 +26,7 @@ nav_bar:
         url: /projects/cyberpunk/
       - title: "- Trauma"
         url: /projects/trauma/  
-  - title: "Unity projects"
+  - title: "Unity3D projects"
     children:
       - title: "- Stray"
         url: /projects/stray/ 

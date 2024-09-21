@@ -91,7 +91,9 @@
   overflow: hidden;
 
   img {
-    width: 100%;
+    //width: 100%;
+    width: 16em;
+    height: 9em;
   }
 }
 
@@ -212,7 +214,7 @@
 
     .archive__item-title {
         margin-top: 0.5em;
-        font-size: $type-size-5;
+        font-size: $type-size-6;
     }
 
     .archive__item-excerpt {

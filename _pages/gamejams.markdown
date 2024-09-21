@@ -1,8 +1,8 @@
 ---
 layout: collection
-title: Portfolio
-permalink: /portfolio/
-collection: portfolio
+title: Game Jams
+permalink: /game_jams/
+collection: gamejams
 sort_by: order
 entries_layout: grid
 author_profile: true

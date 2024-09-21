@@ -293,7 +293,25 @@ defaults:
       related: true
   - scope:
       path: ""
-      type: portfolio
+      type: teamprojects
+    values:
+       layout: single
+       author_profile: false
+       share: false
+       toc: true
+       toc_sticky: true
+  - scope:
+      path: ""
+      type: personalprojects
+    values:
+       layout: single
+       author_profile: false
+       share: false
+       toc: true
+       toc_sticky: true
+  - scope:
+      path: ""
+      type: gamejams
     values:
        layout: single
        author_profile: false
@@ -302,6 +320,12 @@ defaults:
        toc_sticky: true
 
 collections:
-  portfolio:
+  teamprojects:
+    output: true
+    permalink: /:collection/:path/
+  personalprojects:
+    output: true
+    permalink: /:collection/:path/
+  gamejams:
     output: true
     permalink: /:collection/:path/

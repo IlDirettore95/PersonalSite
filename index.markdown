@@ -14,6 +14,10 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.4"
 excerpt: "My name is Giorgio Michele De Giorgio. I am a passionate Game Developer focused on applications optimization and projects architecture. I have experiences in Gameplay, AI, Tooling, Audio and UI programming using both Unity and Unreal."
+TheStrongestStrongman:
+  - url: /projects/the-strongest-strongman
+    image_path: /assets/img/TheStrongestStrongman/Icon.png
+    alt: "TheStrongestStrongman"
 Cyberpunk2077AIExperiments:
   - url: /projects/cyberpunk/
     image_path: /assets/img/Cyberpunk/CyberpunkScreenShot.png
@@ -43,8 +47,22 @@ AStar:
     image_path: /assets/img/AStar/AStar.gif
     alt: "AStar"
 ---
-<h1 style="text-align: center; font-size: 1.5em; margin-top: 0em" id="trauma">Cyberpunk 2077 AI Experiments</h1>
+<h2 style="text-align: center; font-size: 1.5em; margin-top: 0em" id="trauma">The Strongest Strongman</h2>
 
+{: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
+- **Role**: Gameplay Programmer, UI Programmer
+- **Genre**: Puzzle-Platformer
+- **Style**: 2D
+- **Engine**: Unity3D
+- **Tech**: C#, Unity Animator, Unity Physics and Unity UI
+- **Team**: 4 people
+- **Total time**: 4 days
+{: style="text-align: left; font-size: 0.7em;"}
+[Read more about this project](/projects/the-strongest-strongman/){: style="margin-left: 1.3em" .btn .btn--info .btn--small}
+{% include gallery id="TheStrongestStrongman"%}
+---
+---
+## Cyberpunk 2077 AI Experiments
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: AI Programmer, Tool Programmer, Gameplay Programmer
 - **Genre**: Action-RPG
@@ -58,7 +76,7 @@ AStar:
 {% include gallery id="Cyberpunk2077AIExperiments"%}
 ---
 ---
-# Steering Behaviours Demonstration
+## Steering Behaviours Demonstration
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: AI Programmer, Tool Programmer
 - **Engine**: No engine
@@ -70,7 +88,7 @@ AStar:
 {% include gallery id="SteeringBehaviours"%}
 ---
 ---
-# Trauma
+## Trauma
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: AI Programmer, Gameplay Programmer, Audio Programmer and Music Producer
 - **Genre**: Survival Horror
@@ -84,12 +102,12 @@ AStar:
 {% include gallery id="Trauma"%}
 ---
 ---
-# Stray
+## Stray
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: Gameplay Programmer, UI Programmer, Level Designer and Music Producer
 - **Genre**: Adventure Platformer
 - **Style**: 3D - First person
-- **Engine**: Unity
+- **Engine**: Unity3D
 - **Tech**: C#
 - **Team**: 3 people
 - **Total time**: 5 months
@@ -98,7 +116,7 @@ AStar:
 {% include gallery id="Stray" %}
 ---
 ---
-# Murus Gallicus Bot
+## Murus Gallicus Bot
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: AI Programmer
 - **Engine**: No engine
@@ -110,7 +128,7 @@ AStar:
 {% include gallery id="MurusGallicusBot"%}
 ---
 ---
-# A* Implementations and Profiling
+## A* Implementations and Profiling
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: C++ Programmer
 - **Engine**: No engine
@@ -122,7 +140,7 @@ AStar:
 {% include gallery id="AStar"%}
 ---
 ---
-# Procedural 2D Platformer
+## Procedural 2D Platformer
 {: style="text-align: center; font-size: 1.5em; margin-top: 2em"}
 - **Role**: Gameplay Programmer and Tool Programmer
 - **Genre**: Platformer

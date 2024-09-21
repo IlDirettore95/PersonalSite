@@ -1,7 +1,7 @@
 ---
 title: A* Implementations and Profiling
 permalink: /projects/astar/
-order: 5
+order: 4
 excerpt: "Implementations of the A* algorithm"
 header:
   teaser: /assets/img/AStar/AStar.gif

@@ -1,6 +1,6 @@
 ---
 title: Steering Behaviours Demonstration
-order: 2
+order: 1
 permalink: /projects/steering-behaviours/
 excerpt: "Steering Behaviours Demonstration"
 header:
